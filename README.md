@@ -13,6 +13,8 @@ To build and run the Docker container, in the flybook project, you need to run:
 ## Accessing the web application
 
 Go to:
+* http://localhost:8000
+
 * http://localhost:8000/book.html
 
 * http://localhost:8000/service.html
