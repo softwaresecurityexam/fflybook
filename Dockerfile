@@ -5,6 +5,7 @@ COPY ./web-app/ /var/www/html/
 COPY ./api/ /var/www/html/api/
 #COPY ./cgi-bin/status_check.cgi /usr/lib/cgi-bin/status_check.cgi
 COPY ./cgi-bin/ /usr/lib/cgi-bin/
+RUN chmod +x /usr/lib/cgi-bin/status_check
 
 RUN docker-php-ext-install pdo_mysql
 RUN a2enmod rewrite
